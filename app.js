@@ -24,22 +24,22 @@ io.sockets.on("connection", function (socket) {
         // ちなみに、最近のsocket.IOでは、イベント名(以下だとdraw)は
         // 自由にネーミング出来るようになったようです。便利！！
         socket.on("draw", function (data) {
-                console.log(data);
-                    socket.broadcast.emit("draw", data);
-                      });
+            console.log(data);
+            socket.broadcast.emit("draw", data);
+        });
 
-          // 色変更情報がクライアントからきたら、
-          // 他ユーザーへ変更後の色を通知します。
-          socket.on("color", function (color) {
-                  console.log(color);
-                      socket.broadcast.emit("color", color);
-                        });
+        // 色変更情報がクライアントからきたら、
+        // 他ユーザーへ変更後の色を通知します。
+        socket.on("color", function (color) {
+            console.log(color);
+            socket.broadcast.emit("color", color);
+        });
 
-            // 線の太さの変更情報がクライアントからきたら、
-            // 他ユーザーへ変更後の線の太さを通知します。
-            socket.on("lineWidth", function (width) {
-                    console.log(width);
-                        socket.broadcast.emit("lineWidth", width);
-                          });
+        // 線の太さの変更情報がクライアントからきたら、
+        // 他ユーザーへ変更後の線の太さを通知します。
+        socket.on("lineWidth", function (width) {
+            console.log(width);
+            socket.broadcast.emit("lineWidth", width);
+        });
 });
 
