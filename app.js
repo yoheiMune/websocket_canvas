@@ -4,7 +4,7 @@ var socketIO = require("socket.io");
 var fs = require("fs");
 
 // node.jsでWebServerを作ります。
-// アクセスされたら、クライアントに表示するsyncCanvas.htmlを返します。
+// アクセスされたら、クライアントに表示するHTMLを返します。
 var server = http.createServer(function (req, res) {
     res.writeHead(200, {"Content-Type":"text/html"});
     var output = fs.readFileSync("./index.html", "utf-8");
