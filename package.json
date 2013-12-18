@@ -1,0 +1,20 @@
+{
+  "name": "websocket_canvas",
+  "version": "0.0.1",
+  "description": "websocket_canvas ================",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoheiMune/websocket_canvas"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "5bc831ca7ca3324741648b51d1c659a0d91eec43",
+  "dependencies": {
+    "socket.io": "~0.9.16"
+  }
+}
